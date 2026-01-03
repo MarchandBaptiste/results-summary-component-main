@@ -176,6 +176,34 @@ button:hover {
 @media screen and (min-width: 768px) {
   /* CSS appliqué uniquement si l'écran fait plus de 768px */
   .content {
-    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 40px;
+    width: 45rem;
+    overflow: hidden;
   }
+  body {
+    background-color: hsl(221, 100%, 96%);
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centre verticalement à cause de column */
+    align-items: center;     /* Centre horizontalement à cause de column */
+    min-height: 100vh;       /* INDISPENSABLE : utilise 100% de la hauteur vue */
+}
+.result {
+  border-radius: 40px;
+}
+.result, .summary{
+    flex: 1;
+}
+p {
+    font-size: 15px;
+}
+h1{
+    font-size: 20px;
+}
+button{
+    font-size: 15px;
+}
 }

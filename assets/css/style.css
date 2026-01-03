@@ -1,0 +1,181 @@
+/* Reset simple */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header,
+section,
+footer {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  padding: 15px;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  padding: 8px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Style */
+body {
+  background-color: hsl(221, 100%, 96%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.result {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding: 4rem;
+  text-align: center;
+}
+.round {
+  width: 170px;
+  height: 170px;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+}
+p {
+  font-size: 18px;
+}
+.round p:first-child {
+  font-size: 80px;
+  font-weight: bolder;
+  color: white;
+}
+.result h2 {
+  color: white;
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+.summary .recap{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.summaryReaction div, .summaryMemory div, .summaryVerbal div, .summaryVisual div {
+  display: flex;
+  gap: 1rem;
+}
+.summaryReaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+}
+.note {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  color: black;
+}
+.note p:not(:first-of-type) {
+    color: rgb(113, 113, 113); /* S'appliquera à tous les p sauf le premier */
+}
+.summaryMemory {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+}
+.summaryVerbal{
+      display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+}
+.summaryVisual{
+          display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+}
+button {
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 30px;
+  border: 0px solid;
+  font-size: 20px;
+  color: #ccc;
+  padding: 20px;
+}
+button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media screen and (min-width: 768px) {
+  /* CSS appliqué uniquement si l'écran fait plus de 768px */
+  .content {
+    border-radius: 10px;
+  }
+}
